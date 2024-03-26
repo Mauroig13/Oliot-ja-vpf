@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus1_Ajoneuvo", "Harjoitus1_Ajoneuvo\Harjoitus1_Ajoneuvo.csproj", "{34B82D0E-86F8-4D9E-B80E-686E1BA95B2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harjoitus2_Opiskelija", "Harjoitus2_Opiskelija\Harjoitus2_Opiskelija.csproj", "{1545E64F-D297-499B-9884-0AE16584022C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34B82D0E-86F8-4D9E-B80E-686E1BA95B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B82D0E-86F8-4D9E-B80E-686E1BA95B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B82D0E-86F8-4D9E-B80E-686E1BA95B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B82D0E-86F8-4D9E-B80E-686E1BA95B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1545E64F-D297-499B-9884-0AE16584022C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1545E64F-D297-499B-9884-0AE16584022C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1545E64F-D297-499B-9884-0AE16584022C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1545E64F-D297-499B-9884-0AE16584022C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C973E69-4371-492A-998C-E50B3516FAA1}
+	EndGlobalSection
+EndGlobal
