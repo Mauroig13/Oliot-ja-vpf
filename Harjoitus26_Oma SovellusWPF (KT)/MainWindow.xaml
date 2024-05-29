@@ -1,0 +1,35 @@
+﻿<Window x:Class="Harjoitus26_Oma_SovellusWPF__KT_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tehtävälista" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="10">
+            <Label>Nimi:</Label>
+            <TextBox x:Name="textBoxNimi" />
+            <Label>Kuvaus:</Label>
+            <TextBox x:Name="textBoxKuvaus" />
+            <RadioButton x:Name="radioButtonKerta" GroupName="TehtavaTyyppi" Content="Kertaustehtävä" IsChecked="True" />
+            <RadioButton x:Name="radioButtonToistuva" GroupName="TehtavaTyyppi" Content="Toistuva tehtävä" />
+            <StackPanel Orientation="Horizontal">
+                <Label>Aloituspäivämäärä:</Label>
+                <DatePicker x:Name="datePickerAloitusPvm" SelectedDate="{x:Static sys:DateTime.Today}" />
+            </StackPanel>
+            <ComboBox x:Name="comboBoxToistojakso" SelectedIndex="0">
+                <ComboBoxItem Content="1" />
+                <ComboBoxItem Content="7" />
+                <ComboBoxItem Content="30" />
+            </ComboBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="10">
+            <Button Content="Lisää tehtävä" Click="ButtonLisaaTehtava_Click" />
+            <Button Content="Suorita kaikki tehtävät" Click="ButtonSuoritaTehtavat_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
