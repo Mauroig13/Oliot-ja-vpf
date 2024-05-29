@@ -1,0 +1,47 @@
+﻿ ﻿<Window x:Class="Harjoitus_23.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Harjoitus_23"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="432" Source="Kuvat/Kiuas.jpg"/>
+        <TextBlock HorizontalAlignment="Left" Margin="437,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="38"><Run Text="Lämpötila"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="458,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="89" Height="36"><Run Text="Kosteus"/><Run Text=":"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="tb_Lämpötila" HorizontalAlignment="Left" Margin="552,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Height="38" Width="44"><Run Text="0"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="tb_Kosteus" HorizontalAlignment="Left" Margin="552,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" Width="44" Height="36" RenderTransformOrigin="-0.412,0.574" Text="0"/>
+        <Button x:Name="btn_LämpötilaUp" Content="^" HorizontalAlignment="Left" Margin="251,342,0,0" VerticalAlignment="Top" Width="40" Height="37" RenderTransformOrigin="0.5,0.5" Click="btn_LämpötilaUp_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-6.185"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btn_LämpötilaDown" Content="^" HorizontalAlignment="Left" Margin="292,337,0,0" VerticalAlignment="Top" Width="40" Height="37" RenderTransformOrigin="0.5,0.5" Click="btn_LämpötilaDown_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="173.886"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBox x:Name="Input_Kosteus" HorizontalAlignment="Left" Height="59" Margin="165,258,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.5,0.5" PreviewTextInput="Input_Kosteus_PreviewTextInput" TextChanged="Input_Kosteus_TextChanged">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-5.759"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+    </Grid>
+</Window>

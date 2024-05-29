@@ -1,0 +1,45 @@
+﻿<Window x:Class="Harjoitus_20.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Harjoitus_20"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="419" Margin="479,0,0,0" VerticalAlignment="Top" Width="313" Background="#FF9C9C9C">
+            <TextBlock HorizontalAlignment="Left" Margin="24,22,0,0" TextWrapping="Wrap" Text="Etunimi" VerticalAlignment="Top"/>
+            <TextBox x:Name="Input_Etunimi" HorizontalAlignment="Left" Height="23" Margin="24,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBlock HorizontalAlignment="Left" Margin="173,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21"><Run Text="Sukunimi"/><LineBreak/><Run/></TextBlock>
+            <TextBox x:Name="Input_Sukunimi" HorizontalAlignment="Left" Height="23" Margin="173,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBlock HorizontalAlignment="Left" Margin="24,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21"><Run Text="Puhelinnumero"/><LineBreak/><Run/></TextBlock>
+            <TextBox x:Name="Input_Puhelinnumero" HorizontalAlignment="Left" Height="23" Margin="24,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBlock HorizontalAlignment="Left" Margin="173,85,0,0" TextWrapping="Wrap" Text="Sähköposti" VerticalAlignment="Top"/>
+            <TextBox x:Name="Input_Sähköposti" HorizontalAlignment="Left" Height="23" Margin="173,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <TextBlock HorizontalAlignment="Left" Margin="24,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="OpiskelijaID"/><LineBreak/><Run/></TextBlock>
+            <TextBox x:Name="Input_OpiskelijaID" HorizontalAlignment="Left" Height="23" Margin="24,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            <Button x:Name="btn_LisääOpiskelija" Content="Lisää Opiskelija" HorizontalAlignment="Left" Margin="24,226,0,0" VerticalAlignment="Top" Width="120" Height="36" Background="#FF67E467" Click="btn_LisääOpiskelija_Click"/>
+            <Button x:Name="btn_PoistaOpiskelijat" Content="Poista Opiskelijat" HorizontalAlignment="Left" Margin="173,226,0,0" VerticalAlignment="Top" Width="120" Height="36" Background="#FFFB4848"/>
+            <Button x:Name="btn_Tallenna" Content="Tallenna Opiskelijat" HorizontalAlignment="Left" Margin="24,354,0,0" VerticalAlignment="Top" Width="120" Height="36"/>
+            <Button x:Name="btn_Hae" Content="Hae Opiskelijat" HorizontalAlignment="Left" Margin="173,354,0,0" VerticalAlignment="Top" Width="120" Height="36"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="479" Background="#FFCDCDCD">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="218*"/>
+                <RowDefinition Height="201*"/>
+            </Grid.RowDefinitions>
+            <DataGrid x:Name="dg_Opiskelijat" Width="447" ItemsSource="{Binding}" HorizontalAlignment="Left" VerticalAlignment="Top" AutoGenerateColumns="False" CanUserReorderColumns="False" CanUserDeleteRows="False" Margin="10,99,0,0">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Etunimi" Width="100" Binding="{Binding Etunimi}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Sukunimi" Width="100" Binding="{Binding Sukunimi}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Puhelinnumero" Width="100" Binding="{Binding Puhelinnumero}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Sähköposti" Width="100" Binding="{Binding Sähköposti}" IsReadOnly="True"/>
+                    <DataGridTextColumn Header="Opiskelija ID" Width="100" Binding="{Binding OpiskelijaID}" IsReadOnly="True"/>
+                    <DataGridCheckBoxColumn Header="Poista" Binding="{Binding IsSelected}" Width="50*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+
+    </Grid>
+</Window>

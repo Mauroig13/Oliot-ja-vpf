@@ -1,0 +1,16 @@
+﻿<Window x:Class="Harjoitus_16.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Harjoitus_16"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="btn_KmToMiles" Content="Muunna Maileiksi" HorizontalAlignment="Left" Margin="243,195,0,0" VerticalAlignment="Top" Width="138" Height="48" Click="btn_KmToMiles_Click"/>
+        <Button x:Name="btn_MilesToKm" Content="Muunna Kilometreiksi" HorizontalAlignment="Left" Margin="418,195,0,0" VerticalAlignment="Top" Width="134" Height="48" Click="btn_MilesToKm_Click"/>
+        <TextBlock x:Name="tb_LoppuTulos" HorizontalAlignment="Left" Margin="374,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_Input" HorizontalAlignment="Left" Height="23" Margin="289,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="230"/>
+
+    </Grid>
+</Window>
